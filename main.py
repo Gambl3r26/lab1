@@ -1,16 +1,34 @@
-# This is a sample Python script.
+def z21():
+    i = 0
+    print('Введите пароль')
+    pw1 = input()
+    print('Повторно введите пароль')
+    pw2 = input()
+    if pw1 == pw2:
+        print('пароль принят')
+    else:
+        print('пароль не принят')
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def z22():
+    print('номер места')
+    i = int(input())
+    if i <= 36:
+        print('купе')
+    else:
+        print('боковое')
+    if i % 2 == 0 :
+        print('верхнее')
+    else:
+        print('нижнее')
+
+def z23():
+    i=int(input())
+    if i % 4 == 0 and i % 100 == 0:
+        print(i, 'високосный')
+    elif i % 400 == 0:
+        print(i, 'високосный')
+    else:
+        print(i, 'не високосный')
+z23()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
