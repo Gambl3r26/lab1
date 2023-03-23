@@ -29,6 +29,35 @@ def z23():
         print(i, 'високосный')
     else:
         print(i, 'не високосный')
-z23()
 
+def z24():
+    print ('какие цвета смешать?')
+    i = str(input())
+    v = str(input())
+    if i == ('red') or i == ('blue') or i == ('yellow') and v == ('red') or v == ('blue') or v == ('yellow'):
+        if i == ('red') or v == ('red') and i == ('blue') or v == ('blue'):
+            w = ('violet')
+            print(w)
+        elif i == ('red') or v == ('red') and i == ('yellow') or v == ('yellow'):
+            s = ('orange')
+            print(s)
+        elif i == ('blue') or v == ('blue') and i == ('yellow') or v == ('yellow'):
+            t = ('green')
+            print(t)
+        else:
+            print(i)
+    else:
+        print('ошибка')
 
+def z242():
+    str = input("enter first color: ")
+    str += input("enter second color:")
+    if "red" in str and "blue" in str:
+        print("violet")
+    elif "red" in str and "yellow" in str:
+        print("orange")
+    elif "blue" in str and "yellow" in str:
+        print("green")
+    else:
+        print("error")
+z242()
